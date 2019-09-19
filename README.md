@@ -1,4 +1,4 @@
-# pCache - particle cache file
+# pCache - point cache file
 
 `pcache` files contains simple structured data for point cache files. The file format is close to [Stanford's PLY](https://en.wikipedia.org/wiki/PLY_(file_format)) and reduces the feature set to the minimum required for storing only point data. Data types are also adjusted to be able to match the requirements of a point cache.
 
