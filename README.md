@@ -45,31 +45,31 @@ A statement starting with `elements` will state the amount of individual element
 * For a single frame : `elements 9122`
 * For multiple (4) frames : `elements 9122 7112 8933 2128`
 
-#### Global Metadata
+#### Global Properties
 
-Global Metadata statements describe data that is **common to all points of all frames** in the point cache. Each global metadata statement is described by a type, name and its value:
+Global property statements describe data that is **unique to the point cache**. Each global property statement is described by a type, name and its value:
 
-* `global type name value` 
+* `global-property type name value` 
 
-Types are described in the **Type Section** of this document, with the addition of **string** (see data section).
+Property Types are described in the **Type Section** of this document, with the addition of **string** (see data section).
 
-#### Frame Metadata
+#### Frame Properties
 
-Frame Metadata statements describe data that is **common to all points of one frame** in the point cache. Each frame metadata is described by a type and a name:
+Frame property statements describe data that is **unique per frame** in the point cache. Each frame property is described by a type and a name:
 
-*  `frame_data type name` 
+*  `frame-property type name` 
 
-Frame Metadata are stored in the Data of the point cache, prior to the frame data.
+Frame properties are stored in the Data of the point cache, prior to the frame data.
 
-Types are described in the **Type Section** of this document.
+Property Types are described in the **Type Section** of this document.
 
-#### Properties
+#### Point Properties
 
-Property statements describe the data layout present in the file. Every property is described in one line starting with `property` . Each property is described with a type and a name such as:
+Point Property statements describe the data layout present in the file. Every property is described in one line starting with `property` . Each property is described with a type and a name such as:
 
 `property type name`
 
-Types are described in the **Type Section** of this document.
+Property Types are described in the **Type Section** of this document.
 
 #### Header Ending
 
